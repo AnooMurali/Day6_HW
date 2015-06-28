@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Day4_Homework</title>
+
+	<!-- linking to css file -->
+	<link rel="stylesheet" href="CSS/style.css"/>
+
+	<!-- Path to the jquery relative path -->
+	<script src="Jquery/jscript.js"></script>
+ 	<!-- OR use the below absolute path and comment out the above relative path -->
+	<!--CDN - to go the hosted jquery library  -->
+	<!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script> -->
+	
+	<!-- Shake effect in jQuery can only be used by including this js library -->
+	<script src="http://code.jquery.com/ui/1.10.4/jquery-ui.js"></script>
+
+</head>
+
+<body>
+	<!-- Create a div called pink rect -->
+	<div id="pnkRct"></div> <!--after it disappears, text Welcome to my home! will appear-->
+	<img id="wImage" src="images/welcome.gif" width="400" height="200" alt="welcomeGIF"/>
+
+		<div class="gBox">Have A Nice Day!</div>
+		<div class="gBox">Have A Nice Day!</div>
+		<div class="gBox">Have A Nice Day!</div>
+		<br><br><br>
+		<input type = "button" value="Click for visual effect when I stop sliding" id="buttonG" /><br><br>
+		<div class = "batBall"> 
+			<div id = "baT"></div>
+			<div id = "balL"></div>
+		</div>
+	<script> 
+	// boiler plate for jscript. Document ready is a built-in function that waits for document to be loaded and then performs required function//
+		$(document).ready (function() { // this line means when the document is loaded or ready, 									then perform the below funtion. Ready in this statement is the event that invokes the function.
+			$("#pnkRct").fadeOut(500); 
+			$("#wImage").show(4000);
+			$(".gBox").slideDown(4000);
+			$("#baT").hide();
+			$("#balL").hide();
+			// $("#buttonG").fadeIn(slow);
+			
+
+			// $("#press").display(12000);
+				// $('#buttonG').Click(funtion () {
+				// 	console.log("alert")
+				// });
+			}); 
+		//when user clicks on Click here button, green stick and green ball will shake and slide
+			$("#buttonG").click(function() {
+				 $("#baT").show();
+				 $("#balL").show();
+				 $("#baT").effect("shake")
+				 $("#balL").effect("slide");
+				 // $("#balL").shake();
+			});
+			
+
+
+	</script>
+
+</body>
+</html>

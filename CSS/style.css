@@ -1,0 +1,52 @@
+#pnkRct{
+	width: 600px;
+	height: 400px;
+	background: pink;
+	border: red;
+
+}
+#wImage{
+	display: none;
+}
+
+.gBox{
+	display: none;
+	width: 400px;
+	height: 30px;
+	background-color: half white;
+	border: 1px solid silver;
+	font-size: 20pt;
+	text-align: center;
+	color: dark grey;
+	font-family: "Droid Serif", "Times New Roman";
+	font-weight: bold;
+	font-style: italic;
+}
+#buttonG{
+
+	float: right;
+	height: 60px;
+	background-color: brown;
+	color: white;
+	font-weight: bold;
+}
+
+.batBall{
+	height: 100px;
+	width: 100px;
+	background-color: white;
+	float: right;
+}
+
+#baT{
+ height: 80px;
+ width: 15px;
+ background-color: red;
+ }
+
+#balL{
+ height: 50px;
+ width: 50px;
+ border-radius: 25px;
+ background-color: green;
+}
