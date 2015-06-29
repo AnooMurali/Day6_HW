@@ -9,11 +9,11 @@
 	display: none;
 }
 
-.gBox{
+#gBox1{
 	display: none;
 	width: 400px;
 	height: 30px;
-	background-color: half white;
+	background-color: lightgrey;
 	border: 1px solid silver;
 	font-size: 20pt;
 	text-align: center;
@@ -22,6 +22,33 @@
 	font-weight: bold;
 	font-style: italic;
 }
+#gBox2{
+	display: none;
+	width: 400px;
+	height: 30px;
+	background-color: skyblue;
+	border: 1px solid silver;
+	font-size: 20pt;
+	text-align: center;
+	color: dark grey;
+	font-family: "Droid Serif", Helvetica;
+	font-weight: bold;
+	font-style: italic;
+}
+#gBox3{
+	display: none;
+	width: 400px;
+	height: 30px;
+	background-color: lightgreen;
+	border: 1px solid silver;
+	font-size: 20pt;
+	text-align: center;
+	color: dark grey;
+	font-family: "Droid Serif", Arial;
+	font-weight: bold;
+	font-style: italic;
+}
+
 #buttonG{
 
 	float: right;
